@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
+{% include youtubePlayer.html id="4EU7vvSvV-0" %}
 
 # Overview
 
