@@ -2,24 +2,6 @@
 layout: default
 ---
 
-# Project overview
-
-## Motivation
-
-## Objectives
-
-## Data
-
-# Analysis
-
-## Promotion events inference
-
-## Weekly sales prediction
-
-# Summary
-
-
-
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
