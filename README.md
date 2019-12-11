@@ -1,6 +1,6 @@
 ## 140.712 Advanced Data Science Class Project
 
-### Team members:
+### Team members
 Erjia Cui
 
 Zebin Wang
