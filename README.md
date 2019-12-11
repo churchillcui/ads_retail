@@ -18,3 +18,8 @@ Walmart retail sales inference and prediction
 [United States GDP data from 1947 to 2019](https://fred.stlouisfed.org/series/GDP)
 
 United States e-commerce and total sales data from 2009 to 2019 (link)
+
+### Project files location
+The report (both .rmd and .html files) and data are available in the "master" branch of this repository.
+
+The website-related files are available in the "gh-pages" branch of this repository.
