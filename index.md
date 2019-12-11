@@ -2,6 +2,24 @@
 layout: default
 ---
 
+# Screencast
+
+# Overview
+
+## Motivation
+
+## Data
+
+# Analysis
+
+## Promotional events inference
+
+## Weekly sales prediction
+
+# Summary
+
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
