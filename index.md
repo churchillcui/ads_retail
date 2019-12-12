@@ -8,7 +8,13 @@ layout: default
 
 # Overview
 
-## Motivation
+## Background and motivation
+
+Black Friday has been a famous sales promotional events around the country for over 60 years. While most people enjoy those highly-discounted goods during their precious family time, sales managers are usually under great pressure with major concerns on sales performance. Such challenge comes not only in Black Friday, but also at each promotion period around the year, including Super Bowl, Labor Day, Christmas, etc, and especially everytime when they are facing performance asssessment or similar activities. Many questions wait to be answered for these anxious sales managers: What are the factors that affect retail sales? How do they affect retail sales? With the knowledge of those key factors, how to get prepared for the future?
+
+Meanwhile, the booming e-commerce are making sales managers of leading offline retailers feel challenged, as both policy and strategy become different in the online shopping. Living within high competitional atmosphere of retail industry, sales managers are meanwhile eager to know what are the difference between e-commerce and traditional offline retails. All these factors and concerns motivate our retail analysis to provide those sales manager necessary guidance and help.
+
+## Objective
 
 ## Data
 
