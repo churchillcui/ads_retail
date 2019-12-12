@@ -3,3 +3,9 @@ description: Erjia Cui, Zebin Wang, Jingning Zhang, Jiyang Wen
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-tactile
+
+github:
+  public: true
+  is_project_page: true
+  zip_url: https://github.com/churchillcui/ads_retail/zipball/master
+  tar_url: https://github.com/churchillcui/ads_retail/tarball/master
