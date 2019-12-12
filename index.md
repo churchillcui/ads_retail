@@ -40,7 +40,7 @@ Dataset from multiple sources have been collected and combined for use in our an
 
 The questions we sought to answer suggest us to divide the analysis into two subprojects: one (first three questions) focus on Walmart weekly sales, and the other one (the last question) focus on the general differences between e-commerce and traditional offline retails. These two subprojects together help not only answering specific questions that Walmart sales managers may face everyday, but also describing broad new patterns of e-commerce and suggesting targeted preparation for all sales managers in the approaching data science era.
 
-## Technical description (a bit technical, skip if you want)
+## Technical description (optional, skip if you want)
 
 In the first subproject, we started by incomporating our interested features and sales data into an organized format, and performing some explorations to get first senses of relationship between features and sales as well as correlations between covariates before formal quantitative analysis. We next used some advanced statistical methods, such as stepwise regression and generalized estimating equations to extract key factors that have significant influences on sales outcome. The features collected, together with statistical knowledge informed the creation of three advanced predictive algorithms: one using selected generalized linear models, one using tree-based methods, and the other one using network-based methods.
 
