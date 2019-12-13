@@ -50,9 +50,14 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 ### Exploratory data analysis
 
-Many factors are potential to influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is infered to be a confounder based on their respective temporal trend.
+Many factors are potential to influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is inferred to be a confounder based on their respective strong temporal trend.
 
 <img src="images/corr.jpeg" alt="correlation" class = "ct" width = "60%">
+
+One important feature of Walmart weekly sales is two peaks occurred at the end of each year, where the second one is higher than the first one, corresponding with Christmas and Thanksgiving respectively. This pattern is not to our surprise, as stores usually offer the largest promotion events during that period. For other promotion events around a year, we ...... 
+
+<img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "60%">
+
 
 
 
