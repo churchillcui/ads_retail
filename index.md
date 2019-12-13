@@ -46,7 +46,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 # Analysis
 
-## Weekly sales pattern inference and prediction
+## Walmart retail sales pattern inference and prediction
 
 ### Data visualization
 
@@ -78,10 +78,13 @@ The effect of some key factors on weekly sales correspond well with the intuitio
 
 The sales in some period are assumed to have clear patterns, such as two peaks on Thanksgiving and Christmas. However, it has been hard for large retailers to make precise prediction on the sales in a near future around the year, with so many factors (temporal, spatial, other) to consider at the same time. We sought to change that by constructing some advanced tree-based predictive models, and compare them with traditional baseline methods to assess the performance. The first plot below shows ...... (wait for the plot)
 
-## Temporal pattern of e-commerce
+## US retail sales pattern
 
-E-commerce has been considered as both challenge and opportunity for many traditional retailers, thus it is good to first have a look at its new features and differences before diving into this booming area. 
+E-commerce has been considered as both challenge and opportunity for many traditional retailers. The sales chain is often shorter by skipping the onsite stores step, and the promotion stategy can be slightly different, usually focusing on shipping discount for online sales. For sales managers and many other people who are not familiar with e-commerce, it is good to first have a look at its new features and differences before diving into this booming area.
 
+The chart below describe the temporal trend of both e-commerce sales and non-ecommerce sales in the United States from 2000 to 2018, as well as the GDP during this time period. During the notable financial crisis in year 2008, it seems both GDP and non-ecommerce sales drops off in the following short period, but the e-commerce sales remained steady. Such different patterns were modeled and confirmed through spline coefficients, suggesting higher robustness of e-commerce during financial crisis, which might come from its more flexible operating mode.
+
+<img src="images/ecom_time.jpeg" alt="average sales over time" class = "ct" width = "80%">
 
 
 # Summary
