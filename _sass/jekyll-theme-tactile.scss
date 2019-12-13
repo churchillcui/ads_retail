@@ -156,7 +156,7 @@ a.button span {
   padding-left: 50px;
 }
 
-a.bt {
+.bt {
   display: inline-block;
   border-radius: 6px;
   background-color: #f2431b;
@@ -172,14 +172,14 @@ a.bt {
   margin: 5px;
 }
 
-a.bt span {
+.bt span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-a.bt span:after {
+.bt span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -222,7 +222,7 @@ a.bt:hover span:after {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .bt {background-color: #3e8e41;}
 
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
