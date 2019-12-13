@@ -46,7 +46,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 # Analysis
 
-## Walmart retail sales pattern inference and prediction
+## Walmart retail sales pattern
 
 ### Data visualization
 
@@ -84,8 +84,11 @@ E-commerce has been considered as both challenge and opportunity for many tradit
 
 The chart below describe the temporal trend of both e-commerce sales and non-ecommerce sales in the United States from 2000 to 2018, as well as the GDP during this time period. During the notable financial crisis in year 2008, it seems both GDP and non-ecommerce sales drops off in the following short period, but the e-commerce sales remained steady. Such different patterns were modeled and confirmed through spline coefficients, suggesting higher robustness of e-commerce during financial crisis, which might come from its more flexible operating mode.
 
-<img src="images/ecom_time.jpeg" alt="average sales over time" class = "ct" width = "80%">
+<img src="images/ecom_time.jpeg" alt="average sales over time" class = "ct" width = "90%">
 
+The seasonal fluctuation of e-commerce and offline sales also exhibits different patterns from the above charts, with especially lower offline sales in the 1st quarter and higher online sales in the 4th quarter. We extract and describe such pattern of e-commerce and non-ecommerce sales by summarizing their respective percentage of sales in each quarter for each year. The large proportion of e-commerce sales in the last quarter of a year may be attributed to large sales promotion events during this time, together with possible cold weather effects. For those retailers that are new to e-commerce industry, such different distribution of a year suggests the modification of current storage plan over time.
+
+<img src="images/ecom_quarter.jpeg" alt="average sales over time" class = "ct" width = "60%">
 
 # Summary
 
