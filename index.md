@@ -12,6 +12,8 @@ layout: default
 
 Black Friday has been a famous sales promotion holiday around the country for over 60 years. While many people enjoy shopping for highly-discounted goods in the store during such precious family time, most sales managers are under great pressure, worrying about sales performance during this period. Such pressure comes not only in Black Friday, but also at each sales promotion time around the year, including Super Bowl, Labor Day, Christmas, etc. Many questions wait to be answered for these anxious sales managers: What are key factors that affect retail sales? How do they affect retail sales? With the knowledge of those key factors, how to get prepared for the future? 
 
+<img src="images/sales_cartoon.png" alt="sales manager cartoon" class = "ct" width = "80%">
+
 Meanwhile, the booming e-commerce are making sales managers of leading offline retailers feel even more challenged, as both policy and strategy become different in the online shopping. Working in the high competitional retail industry, they are also eager to understand what are the differences between e-commerce and traditional offline retails. In order to help these sales managers of large retailers, we perform our retail statistical analysis in this project, trying to provide answers and recommendations to some questions they are often concerned about.
 
 ## Objective
@@ -92,7 +94,7 @@ The chart below describe the temporal trend of both e-commerce sales and non-eco
 
 The seasonal fluctuation of e-commerce and offline sales also exhibits different patterns from the above charts, with especially lower offline sales in the 1st quarter and higher online sales in the 4th quarter. We extract and describe such pattern of e-commerce and non-ecommerce sales by summarizing their respective percentage of sales in each quarter for each year. The large proportion of e-commerce sales in the last quarter of a year may be attributed to large sales promotion events during this time, together with possible cold weather effects. For those retailers that are new to e-commerce industry, such different distribution of a year suggests the modification of current storage plan over time.
 
-<img src="images/ecom_quarter.jpeg" alt="average sales over time" class = "ct" width = "60%">
+<img src="images/ecom_quarter.jpeg" alt="sales at each quarter" class = "ct" width = "60%">
 
 # Summary
 
