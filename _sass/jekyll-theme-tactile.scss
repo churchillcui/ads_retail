@@ -156,7 +156,7 @@ a.button span {
   padding-left: 50px;
 }
 
-.bt {
+a.bt {
   display: inline-block;
   border-radius: 6px;
   background-color: #f2431b;
@@ -172,14 +172,14 @@ a.button span {
   margin: 5px;
 }
 
-.bt span {
+a.bt span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.bt span:after {
+a.bt span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -190,6 +190,7 @@ a.button span {
 
 a.bt:hover span {
   padding-right: 25px;
+  color: #c5000c;
 }
 
 a.bt:hover span:after {
