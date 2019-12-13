@@ -206,7 +206,7 @@ a.bt:hover span:after {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -218,11 +218,11 @@ a.bt:hover span:after {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+// .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .bt {background-color: #3e8e41;}
+// .dropdown:hover .bt {background-color: #3e8e41;}
 
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
