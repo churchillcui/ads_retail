@@ -74,12 +74,14 @@ We tried to build several statistical models, including linear model with stepwi
 
 The effect of some key factors on weekly sales correspond well with the intuition before building the model. For example, temperature tends to negatively influence weekly sales, as low temperature usually indicates winter season, when stores tend to start their largest promotion events and sales reach their peaks in Thanksgiving and Christmas from weekly sales plot. It is also interesting to find some features, with vague idea on how to influence retail sales, are selected as key factors, such as fuel price. One worrying fact for sales managers is, we indeed find a decrease of retail sales over time, suggesting the further look at possible threats (e.g. e-commerce).
 
-### Prediction comparisons
+### Prediction
 
-
-
+The sales in some period are assumed to have clear patterns, such as two peaks on Thanksgiving and Christmas. However, it has been hard for large retailers to make precise prediction on the sales in a near future around the year, with so many factors (temporal, spatial, other) to consider at the same time. We sought to change that by constructing some advanced tree-based predictive models, and compare them with traditional baseline methods to assess the performance. The first plot below shows ...... (wait for the plot)
 
 ## Temporal pattern of e-commerce
+
+E-commerce has been considered as both challenge and opportunity for many traditional retailers, thus it is good to first have a look at its new features and differences before diving into this booming area. 
+
 
 
 # Summary
