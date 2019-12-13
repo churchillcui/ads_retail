@@ -70,15 +70,13 @@ We tried to build several statistical models, including linear model with stepwi
 
 **Positive effects**: Fuel price, CPI, Is Holiday indicator.
 
-**Negative effects**: Temperature, Unemployment rate, GDP, Number of days since baseline date.
+**Negative effects**: Temperature, Unemployment rate, Number of days since baseline date (temporal variable).
 
-| Effects        | Features          |
-|:------|:-----------|
-| Positive | Fuel price, CPI, Is Holiday indicator |
-| Negative |  Temperature, Unemployment rate, GDP, Number of days since baseline date. |
-
+The effect of some key factors on weekly sales correspond well with the intuition before building the model. For example, temperature tends to negatively influence weekly sales, as low temperature usually indicates winter season, when stores tend to start their largest promotion events and sales reach their peaks in Thanksgiving and Christmas from weekly sales plot. It is also interesting to find some features, with vague idea on how to influence retail sales, are selected as key factors, such as fuel price. One worrying fact for sales managers is, we indeed find a decrease of retail sales over time, suggesting the further look at possible threats (e.g. e-commerce).
 
 ### Prediction comparisons
+
+
 
 
 ## Temporal pattern of e-commerce
