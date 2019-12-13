@@ -10,41 +10,41 @@ layout: default
 
 ## Background and motivation
 
-As the world's largest economy by nominal GDP and net wealth, United States has been famous for its prosperous retail industry over decades. Many retailers in the United States have earned their reputations all over the world, such as Walmart, Amazon, etc. Among all the job positions, retail sales managers play a key role in the company, since such competitative industry has been putting consecutively high expectations for them to adjust for rapid social innovation and keep the company's retail sales moving in the right direction. As sales managers, they are likely to be interested in not only getting prepared for the future sales, but also balancing the online and offline sales, as e-commerce concept is getting more and more popular in recent years. Many questions arise from them everyday: What are the factors that affect offline sales? Can we predict future sales? How do nationwide or worldwide economic events affect the whole retail industry? What's new in this e-commerce era?
+As the world's largest economy by nominal GDP and net wealth, United States has been famous for its prosperous retail industry over decades. Many retailers in the United States have earned their reputations all over the world, such as Walmart, Amazon, etc. Among all the job positions, retail sales managers play a key role in the company, since such competitative industry has been putting consecutively high expectations for them to adjust for rapid social innovation and keep the company's retail sales moving in the right direction. As sales managers, they are likely to be interested in not only getting prepared for the future sales, but also balancing the online and offline sales, as e-commerce concept is getting more and more popular in recent years. Many questions arise from them everyday: What are the factors that affect offline sales? Can we predict future sales? How do nationwide economic events affect the whole retail industry? What's new in this e-commerce era?
 
 <img src="images/sales_cartoon.png" alt="sales manager cartoon" class = "ct" width = "80%">
 
-These hard problems arose from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and available data for a long time. To cover such gap, we conduct this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
+These hard problems arose from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and retail sales data for a long time. To cover such gap, we conducted this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
 
 ## Objective
 
 Through this project, we sought to answer four primary questions for retail sales managers:
 
-* How social and economic factors affect retail sales?
-
 * What are the factors that affect offline sales?
 
-* Can we develop a predictive algorithm integrating current features and sales information to predict retail sales in the near future? What form should that algorithm take?
+* Can we integrate features with advanced statistical methods to predict retail sales in the near future?
 
-* What are the differences between online and offline sales? Do they have different temporal patterns?
+* How do nationwide economic events affect the whole retail industry?
+
+* What are different patterns of e-commerce compared with offline sales?
 
 ## Data
 
 Dataset from multiple sources have been collected and combined for use in our analysis, including
 
-* [Walmart weekly sales and store features data from Feb 5, 2010 to Oct 26, 2012](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data)
-
-* [US Gross Domestic Product (GDP) data](https://fred.stlouisfed.org/series/GDP)
+* [Walmart retail sales and store features data from Feb 5, 2010 to Oct 26, 2012](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data)
 
 * [US total retail sales and e-commerce retail sales from 4th quarter 1999 to 3rd quarter 2019](https://www.census.gov/retail/index.html)
 
+* [US Gross Domestic Product (GDP) data](https://fred.stlouisfed.org/series/GDP)
+
 ## Approach
 
-The type of questions we sought to answer suggest the analysis being separated into two subprojects: one (first three questions) focus on Walmart weekly sales, and the other one (the last question) focus on the general differences between e-commerce and traditional offline retails. These two subprojects together help not only answering specific questions with respect to certain features that Walmart sales managers may face everyday (for example, how does temperature reduce by one degree influence sales?), but also describing some broad new patterns of e-commerce for all sales managers in the approaching data science era.
+The questions we sought to answer suggest the analysis being separated into two subprojects: one (first two questions) focus on Walmart retail sales and features, and the other one (the last two questions) focus on the general retail sales pattern in the United States. These two subprojects together help not only answering questions with respect to specific features that retail sales managers may be interested in (for example, would reducing temperature increase retail sales?), but also describing some general patterns of online and offline sales, serving as guidance for all retail sales managers in our approaching e-commerce world.
 
-(The following two paragraphs are a little bit technical, skip if you want) In the first subproject, we started by incomporating our interested features and sales data into an organized format, and performing some explorations to get first senses of relationship between features and sales as well as correlations between covariates before formal quantitative analysis. We next used some advanced statistical methods, such as stepwise regression and generalized estimating equations to extract key factors that have significant influences on sales outcome. The features collected, together with statistical knowledge informed the creation of three advanced predictive algorithms: one using selected generalized linear models, one using tree-based methods, and the other one using network-based methods.
+(The following two paragraphs are a little bit technical, skip if you want) In the first subproject, we started by exploring feature correlations and temporal distributions of retail sales individually, then exploring their joint relationship. Some advanced statistical methods are then applied, such as stepwise regression and generalized estimating equations, to extract key factors that have significant influences on sales outcome. The features collected, together with statistical knowledge of tree-based methods, informed the creation of three advanced tree-based predictive algorithms.
 
-In the second subproject, we modelled the temporal trend differences between e-commerce and offline sales by testing the significance of splines based on given pattern, and in further studied respective seasonal patterns. Some advanced statistical techniques, such as ANOVA test, are applied to quantify the results.
+In the second subproject, we modelled the temporal trend differences between online and offline sales using splines, and quantified the effect of financial crisis in 2008 by testing the significance of spline coefficients. Their respective seasonal patterns were further analyzed through advanced statistical techniques, such as ANOVA test.
 
 # Analysis
 
