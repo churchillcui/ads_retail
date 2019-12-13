@@ -50,7 +50,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 ### Data visualization
 
-Many factors may influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is inferred to be a confounder based on their respective strong temporal trend.
+Many factors may influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since baseline date). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is inferred to be a confounder based on their respective strong temporal trend.
 
 <img src="images/corr.jpeg" alt="correlation" class = "ct" width = "55%">
 
@@ -66,8 +66,16 @@ The exploration work provides a general idea of how the features and weekly sale
 
 ### Key factors that influence weekly sales
 
-We tried to build several statistical models, including linear model with stepwise regression, generalized estimating equations and generalized linear models. Technical parts are discussed in detail in the report and are skipped here to keep our discussion on an appropriate level. We divide selected features into two categories with converse effects on weekly sales:
+We tried to build several statistical models, including linear model with stepwise regression, generalized estimating equations and generalized linear models. Technical parts are skipped here to keep our discussion on an appropriate level, and will be discussed in detail in the report. We divide selected features into two categories with converse effects on weekly sales:
 
+**Positive effects**: Fuel price, CPI, Is Holiday indicator.
+
+**Negative effects**: Temperature, Unemployment rate, GDP, Number of days since baseline date.
+
+| Effects        | Features          |
+|:------|:-----------|
+| Positive | Fuel price, CPI, Is Holiday indicator |
+| Negative |  Temperature, Unemployment rate, GDP, Number of days since baseline date. |
 
 
 ### Prediction comparisons
