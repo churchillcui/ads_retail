@@ -10,6 +10,8 @@ layout: default
 
 ## Background and motivation
 
+United States 
+
 Black Friday has been a famous sales promotion holiday around the country for over 60 years. While many people enjoy shopping for highly-discounted goods in the store during such precious family time, most sales managers are under great pressure, worrying about sales performance during this period. Such pressure comes not only in Black Friday, but also at each sales promotion time around the year, including Super Bowl, Labor Day, Christmas, etc. Many questions wait to be answered for these anxious sales managers: What are key factors that affect retail sales? How do they affect retail sales? With the knowledge of those key factors, how to get prepared for the future? 
 
 <img src="images/sales_cartoon.png" alt="sales manager cartoon" class = "ct" width = "80%">
