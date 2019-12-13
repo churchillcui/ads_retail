@@ -48,7 +48,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 # Analysis
 
-## Walmart retail sales pattern
+## Walmart retail sales inference and prediction
 
 ### Data visualization
 
