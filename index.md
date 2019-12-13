@@ -56,9 +56,9 @@ Many factors are potential to influence weekly sales of retailers, such as Unemp
 
 One important feature of Walmart weekly sales is two peaks occurred at the end of each year, where the second one is higher than the first one, corresponding with Christmas and Thanksgiving respectively. This pattern is not to our surprise, as stores usually offer the largest promotion events during that period. For other promotion events around a year, we ...... 
 
-<img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "60%">
+<img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "80%">
 
-
+Linking the sales outcome with each feature, we 
 
 
 ## Temporal comparison of e-commerce and total sales
