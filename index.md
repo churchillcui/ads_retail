@@ -10,11 +10,11 @@ layout: default
 
 ## Background and motivation
 
-As the world's largest economy by nominal GDP and net wealth, United States has been famous for its prosperous retail industry over decades. Many retailers in the United States have earned their reputations all over the world, such as Walmart, etc. Among all the job positions, retail sales managers play a key role in the company, since such competitative industry has been putting consecutively high expectations for them to adjust for rapid social innovation and keep the company's retail sales moving in the right direction. As sales managers, they are likely to be interested in not only getting prepared for the future sales, but also balancing the online and offline sales, as e-commerce concept is getting more and more popular in recent years. Many questions arise from them everyday: What are the factors that affect offline sales? Can we predict future sales? How do nationwide economic events affect the whole retail industry? What's new in this e-commerce era?
+As the world's largest economy by nominal GDP and net wealth, the United States has been famous for its prosperous retail industry over decades. Many retailers in the United States have earned their reputations all over the world, such as Walmart, Target, etc. Among all the job positions, retail sales managers play a key role in the company, since such a competitive industry has been putting consecutively high expectations for them to adjust for rapid social innovation and keep the company's retail sales moving in the right direction. As sales managers, they are likely to be interested in not only getting prepared for the future sales, but also balancing the online and offline sales, as e-commerce concept is getting more and more popular in recent years. Many questions arise from them every day: What are the factors that affect offline sales? Can we predict future sales? How do nationwide economic events affect the whole retail industry? What's new in this e-commerce era?
 
 <img src="images/sales_cartoon.png" alt="sales manager cartoon" class = "ct" width = "80%">
 
-These hard problems arose from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and retail sales data for a long time. To cover such gap, we conducted this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
+These hard problems arose from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and retail sales data for a long time. To cover the gap, we conducted this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
 
 ## Objective
 
@@ -56,11 +56,11 @@ Many factors may influence weekly sales of retailers, such as Unemployment rate,
 
 <img src="images/corr.jpeg" alt="correlation" class = "ct" width = "55%">
 
-One important observation of retail sales is two peaks occurred at the end of each year, where the second one is always higher than the first one, corresponding with Christmas and Thanksgiving respectively. This pattern is not to our surprise, as stores usually offer the largest promotion events during that period, and the family time usually stimulate even more shopping passion. For other promotion events around a year, the sales pattern looks stable with slight fluctuations. One interesting finding is, the lowest sales usually comes two or three weeks directly after Christmas, possibly due to the reduced needs and passion after Christmas carnival.
+One important observation of retail sales are two peaks occurred at the end of each year, where the second one is always higher than the first one, corresponding with Christmas and Thanksgiving respectively. This pattern is not to our surprise, as stores usually offer the largest promotion events during that period, and the family time usually stimulate even more shopping passion. For other promotion events around a year, the sales pattern looks stable with slight fluctuations. One interesting finding is, the lowest sales usually comes two or three weeks directly after Christmas, possibly due to the reduced needs and passion after the Christmas carnival.
 
 <img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "90%">
 
-Linking retail sales with potential influential factors, the plots below illustrate the relationship between averages sales and each individual factor stratifying by store type. The definition of store types A, B, C are not mentioned from data source, but we infer them to be Walmart Supercenter, Walmart Neighbourhood Market and Walmart Express stores respectively considering their size, amount and the [description](https://www.scrapehero.com/number-of-walmart-stores-and-an-analysis-of-related-store-data/) of Walmart store types before year 2016. The plot implies weak linear effects of most features, but meanwhile indicates possible interactions with store type. For example, we observe a peak of average sales at the end of year for type A and type B stores from the upper-left plot, but quite flat temporal pattern for type C stores. However, the effects of some features look ambiguous, such as unemployment rate and temperature. 
+Linking retail sales with potential influential factors, the plots below illustrate the relationship between averages sales and each individual factor stratifying by store type. The definition of store types A, B, C is not mentioned from the data source, but we infer them to be Walmart Supercenter, Walmart Neighbourhood Market and Walmart Express stores respectively considering their size, amount and the [description](https://www.scrapehero.com/number-of-walmart-stores-and-an-analysis-of-related-store-data/) of Walmart store types before 2016. The plot implies weak linear effects of most features, but meanwhile indicates possible interactions with store type. For example, we observe a peak of average sales at the end of the year for type A and type B stores from the upper-left plot, but quite a flat temporal pattern for type C stores. However, the effects of some features look ambiguous, such as unemployment rate and temperature. 
 
 <img src="images/sales_feature.jpeg" alt="sales-feature relationship" class = "ct" width = "80%">
 
@@ -68,13 +68,13 @@ The exploration work provides a general idea of how the features and weekly sale
 
 ### Key factors that influence weekly sales
 
-We built several statistical models, including linear model with stepwise regression, generalized estimating equations and generalized linear models. Technical parts are skipped here to keep our discussion on an appropriate level, and are discussed in detail in the report. We divide selected features into two categories with converse effects on weekly sales:
+We built several statistical models, including linear model with stepwise regression, generalized estimating equations, and generalized linear models. Technical parts are skipped here to keep our discussion on an appropriate level, and are discussed in detail in the report. We divide selected features into two categories with converse effects on retail sales:
 
-**Positive effects**: Fuel price, CPI, Is Holiday indicator.
+**Positive effects**: Is Holiday indicator, CPI, Time.
 
-**Negative effects**: Temperature, Unemployment rate, Number of days since baseline date (temporal variable).
+**Negative effects**: Unemployment rate, fuel price.
 
-The effect of some key factors on weekly sales correspond well with the intuition before building the model. For example, temperature tends to negatively influence weekly sales, as low temperature usually indicates winter season, when stores tend to start their largest promotion events and sales reach their peaks in Thanksgiving and Christmas from weekly sales plot. It is also interesting to find some features, with vague idea on how to influence retail sales, are selected as key factors, such as fuel price. One worrying fact for sales managers is, we indeed find a decrease of retail sales over time, suggesting the further look at possible threats (e.g. e-commerce).
+The effect of some key factors on weekly sales correspond well with our intuition. For example, unemployment rate tends to negatively influence weekly sales, as low umployment rate usually indicates strong economy. It is also interesting to find some features, with vague idea on how to influence retail sales, are selected as key factors, such as fuel price. One worrying fact for sales managers is, we indeed find a decrease of retail sales over time, suggesting the further look at possible threats (e.g. e-commerce).
 
 ### Prediction
 
