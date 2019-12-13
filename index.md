@@ -32,7 +32,7 @@ Dataset from multiple sources have been collected and combined for use in our an
 
 * [Walmart weekly sales and store features data from Feb 5, 2010 to Oct 26, 2012](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data)
 
-* [US Gross Domestic Product (GDP) data from 1st quarter 2010 to 4th quarter 2012](https://fred.stlouisfed.org/series/GDP)
+* [US Gross Domestic Product (GDP) data](https://fred.stlouisfed.org/series/GDP)
 
 * [US total retail sales and e-commerce retail sales from 4th quarter 1999 to 3rd quarter 2019](https://www.census.gov/retail/index.html)
 
@@ -52,7 +52,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 Many factors are potential to influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is infered to be a confounder based on their respective temporal trend.
 
-![correlation](https://github.com/churchillcui/ads_retail/blob/gh-pages/images/corr.jpeg)
+![correlation](https://github.com/churchillcui/ads_retail/images/corr.jpeg)
 
 
 ## Temporal comparison of e-commerce and total sales
