@@ -10,21 +10,19 @@ layout: default
 
 ## Background and motivation
 
-United States 
-
-Black Friday has been a famous sales promotion holiday around the country for over 60 years. While many people enjoy shopping for highly-discounted goods in the store during such precious family time, most sales managers are under great pressure, worrying about sales performance during this period. Such pressure comes not only in Black Friday, but also at each sales promotion time around the year, including Super Bowl, Labor Day, Christmas, etc. Many questions wait to be answered for these anxious sales managers: What are key factors that affect retail sales? How do they affect retail sales? With the knowledge of those key factors, how to get prepared for the future? 
+As the world's largest economy by nominal GDP and net wealth, United States has been famous for its prosperous retail industry over decades. Many retailers in the United States have earned their reputations all over the world, such as Walmart, Amazon, etc. Among all the job positions, retail sales managers play a key role in the company, since such competitative industry has been putting consecutively high expectations for them to adjust for rapid social innovation and keep the company's retail sales moving in the right direction. As sales managers, they are likely to be interested in not only getting prepared for the future sales, but also balancing the online and offline sales, as e-commerce concept is getting more and more popular in recent years. Many questions arise from them everyday: What are the factors that affect offline sales? Can we predict future sales? How do nationwide or worldwide economic events affect the whole retail industry? What's new in this e-commerce era?
 
 <img src="images/sales_cartoon.png" alt="sales manager cartoon" class = "ct" width = "80%">
 
-Meanwhile, the booming e-commerce are making sales managers of leading offline retailers feel even more challenged, as both policy and strategy become different in the online shopping. Working in the high competitional retail industry, they are also eager to understand what are the differences between e-commerce and traditional offline retails. In order to help these sales managers of large retailers, we perform our retail statistical analysis in this project, trying to provide answers and recommendations to some questions they are often concerned about.
+These hard problems arose from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and available data for a long time. To cover such gap, we conduct this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
 
 ## Objective
 
-As the weekly sales data we obtained are provided by Walmart, we sought to answer four primary questions for Walmart sales managers through this project.
+Through this project, we sought to answer four primary questions for retail sales managers:
 
 * How social and economic factors affect retail sales?
 
-* What are the key factors that affect retail sales?
+* What are the factors that affect offline sales?
 
 * Can we develop a predictive algorithm integrating current features and sales information to predict retail sales in the near future? What form should that algorithm take?
 
