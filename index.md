@@ -52,7 +52,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 Many factors may influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is inferred to be a confounder based on their respective strong temporal trend.
 
-<img src="images/corr.jpeg" alt="correlation" class = "ct" width = "60%">
+<img src="images/corr.jpeg" alt="correlation" class = "ct" width = "55%">
 
 One important feature of Walmart weekly sales is that two peaks occurred at the end of each year, where the second one is always higher than the first one, corresponding with Christmas and Thanksgiving respectively. This pattern is not to our surprise, as stores usually offer the largest promotion events during that period, and the family time can usually stimulate the shopping passion. For other promotion events around a year, the sales pattern looks stable with slight fluctuations. One interesting finding is, the lowest sales usually comes two or three weeks directly after Christmas, possibly due to the reduced needs and passion after Christmas carnival.
 
@@ -62,9 +62,7 @@ Linking weekly sales outcome with features described above, the plots below illu
 
 <img src="images/sales_feature.jpeg" alt="sales-feature relationship" class = "ct" width = "80%">
 
-
-
-To identify the "key" features, some advanced statistical models 
+The exploration work provides a general idea of how the features and weekly sales data look like and what are their respective relations. To identify "key" features and answer the second question, the visualization results indicate the application of some advanced statistical models in our next step.
 
 
 
