@@ -52,7 +52,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 Many factors are potential to influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is infered to be a confounder based on their respective temporal trend.
 
-<img src="images/corr.jpeg" alt="correlation" width = "80%", class = "center">
+<img src="images/corr.jpeg" alt="correlation" class = "center">
 
 ## Temporal comparison of e-commerce and total sales
 
