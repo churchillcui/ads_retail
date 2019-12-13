@@ -62,7 +62,10 @@ Linking weekly sales outcome with features described above, the plots below illu
 
 <img src="images/sales_feature.jpeg" alt="sales-feature relationship" class = "ct" width = "80%">
 
-The exploration work provides a general idea of how the features and weekly sales data look like and what are their respective relations. To identify "key" features and answer the second question, the visualization results indicate the application of some advanced statistical models in our next step.
+The exploration work provides a general idea of how the features and weekly sales data look like and what are their respective relations. To identify "key" features and answer the second question, our visualizations indicate the application of some advanced statistical models as next step.
+
+### Key factors that influence weekly sales
+
 
 
 
