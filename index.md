@@ -12,7 +12,7 @@ layout: default
 
 Black Friday has been a famous sales promotion holiday around the country for over 60 years. While many people enjoy shopping for highly-discounted goods in the store during such precious family time, most sales managers are under great pressure, worrying about sales performance during this period. Such pressure comes not only in Black Friday, but also at each sales promotion time around the year, including Super Bowl, Labor Day, Christmas, etc. Many questions wait to be answered for these anxious sales managers: What are key factors that affect retail sales? How do they affect retail sales? With the knowledge of those key factors, how to get prepared for the future? 
 
-Meanwhile, the booming e-commerce are making sales managers of leading offline retailers feel even more challenged, as both policy and strategy become different in the online shopping. Working in the high competitional retail industry, they are also eager to understand what are the differences between e-commerce and traditional offline retails. To help these sales managers of large retailers, we perform our retail statistical analysis, trying to provide answers and recommendations to some questions they are most concerned about.
+Meanwhile, the booming e-commerce are making sales managers of leading offline retailers feel even more challenged, as both policy and strategy become different in the online shopping. Working in the high competitional retail industry, they are also eager to understand what are the differences between e-commerce and traditional offline retails. In order to help these sales managers of large retailers, we perform our retail statistical analysis in this project, trying to provide answers and recommendations to some questions they are often concerned about.
 
 ## Objective
 
@@ -38,15 +38,15 @@ Dataset from multiple sources have been collected and combined for use in our an
 
 ## Approach
 
-The type of questions we sought to answer suggest us to divide the analysis into two subprojects: one (first three questions) focus on Walmart weekly sales, and the other one (the last question) focus on the general differences between e-commerce and traditional offline retails. These two subprojects together help not only answering specific questions with respect to certain features that Walmart sales managers may face everyday (for example, whether low temperature leads to sales decrease?), but also describing some broad new patterns of e-commerce for all sales managers in the approaching data science era.
+The type of questions we sought to answer suggest the analysis being separated into two subprojects: one (first three questions) focus on Walmart weekly sales, and the other one (the last question) focus on the general differences between e-commerce and traditional offline retails. These two subprojects together help not only answering specific questions with respect to certain features that Walmart sales managers may face everyday (for example, how does temperature reduce by one degree influence sales?), but also describing some broad new patterns of e-commerce for all sales managers in the approaching data science era.
 
-## Technical description (optional, skip if you want)
+(The following two paragraphs are a little bit technical, skip if you want) In the first subproject, we started by incomporating our interested features and sales data into an organized format, and performing some explorations to get first senses of relationship between features and sales as well as correlations between covariates before formal quantitative analysis. We next used some advanced statistical methods, such as stepwise regression and generalized estimating equations to extract key factors that have significant influences on sales outcome. The features collected, together with statistical knowledge informed the creation of three advanced predictive algorithms: one using selected generalized linear models, one using tree-based methods, and the other one using network-based methods.
 
-In the first subproject, we started by incomporating our interested features and sales data into an organized format, and performing some explorations to get first senses of relationship between features and sales as well as correlations between covariates before formal quantitative analysis. We next used some advanced statistical methods, such as stepwise regression and generalized estimating equations to extract key factors that have significant influences on sales outcome. The features collected, together with statistical knowledge informed the creation of three advanced predictive algorithms: one using selected generalized linear models, one using tree-based methods, and the other one using network-based methods.
-
-In the second subproject, we modelled the temporal trend differences between e-commerce and offline sales using splines based on given pattern, and in further studied respective seasonal patterns. Some advanced statistical techniques, such as ANOVA test, are applied to quantify the results.
+In the second subproject, we modelled the temporal trend differences between e-commerce and offline sales by testing the significance of splines based on given pattern, and in further studied respective seasonal patterns. Some advanced statistical techniques, such as ANOVA test, are applied to quantify the results.
 
 # Analysis
+
+
 
 
 
