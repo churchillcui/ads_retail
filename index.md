@@ -58,7 +58,7 @@ One important feature of Walmart weekly sales is that two peaks occurred at the 
 
 <img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "90%">
 
-Linking the sales outcome with each feature, 
+
 
 
 
