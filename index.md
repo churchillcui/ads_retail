@@ -50,7 +50,7 @@ In the second subproject, we modelled the temporal trend differences between e-c
 
 ### Data visualization
 
-Many factors are potential to influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is inferred to be a confounder based on their respective strong temporal trend.
+Many factors may influence weekly sales of retailers, such as Unemployment rate, CPI, Temperature, Fuel price, Store size, etc. We explore the correlations between several temporal features (Unemployment rate, Fuel price, CPI, Temperature, GDP) and temporal variables with different scales (Year, Month, Quarter, Number of days since event begin). Some of features display strong correlations with temporal variables (Fuel price, GDP) while others do not (Unemployment rate, CPI, Temperature) from this crude correlation plots. As for relationship between features, we do not observe large dependence except between Fuel price and GDP, where time is inferred to be a confounder based on their respective strong temporal trend.
 
 <img src="images/corr.jpeg" alt="correlation" class = "ct" width = "60%">
 
@@ -58,8 +58,13 @@ One important feature of Walmart weekly sales is that two peaks occurred at the 
 
 <img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "90%">
 
+Linking weekly sales outcome with features described above, the plots below illustrate the relationship between averages sales and each individual factor stratifying by store type. The definition of store types A, B, C are not mentioned from data source, but we infer them to be Walmart Supercenter, Walmart Neighbourhood Market and Walmart Express stores respectively considering their size, amount and the [description](https://www.scrapehero.com/number-of-walmart-stores-and-an-analysis-of-related-store-data/) of Walmart store types before year 2016. The plot implies weak linear effects of most features, but meanwhile indicates possible interactions of these features with store type. For example, we observe a peak of average sales at the end of year for type A and type B stores from the upper-left plot, but quite flat temporal pattern for type C stores. However, the effects of some features look ambiguous, such as unemployment rate and temperature. 
+
+<img src="images/sales_feature.jpeg" alt="sales-feature relationship" class = "ct" width = "80%">
 
 
+
+To identify the "key" features, some advanced statistical models 
 
 
 
