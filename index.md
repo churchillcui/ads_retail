@@ -82,9 +82,13 @@ The sales in some period are assumed to have clear patterns, such as two peaks o
 
 E-commerce has been considered as both challenge and opportunity for many traditional retailers. The sales chain is often shorter by skipping the onsite stores step, and the promotion stategy can be slightly different, usually focusing on shipping discount for online sales. For sales managers and many other people who are not familiar with e-commerce, it is good to first have a look at its new features and differences before diving into this booming area.
 
+### Financial crisis influence
+
 The chart below describe the temporal trend of both e-commerce sales and non-ecommerce sales in the United States from 2000 to 2018, as well as the GDP during this time period. During the notable financial crisis in year 2008, it seems both GDP and non-ecommerce sales drops off in the following short period, but the e-commerce sales remained steady. Such different patterns were modeled and confirmed through spline coefficients, suggesting higher robustness of e-commerce during financial crisis, which might come from its more flexible operating mode.
 
 <img src="images/ecom_time.jpeg" alt="average sales over time" class = "ct" width = "90%">
+
+### Seasonal fluctuation
 
 The seasonal fluctuation of e-commerce and offline sales also exhibits different patterns from the above charts, with especially lower offline sales in the 1st quarter and higher online sales in the 4th quarter. We extract and describe such pattern of e-commerce and non-ecommerce sales by summarizing their respective percentage of sales in each quarter for each year. The large proportion of e-commerce sales in the last quarter of a year may be attributed to large sales promotion events during this time, together with possible cold weather effects. For those retailers that are new to e-commerce industry, such different distribution of a year suggests the modification of current storage plan over time.
 
