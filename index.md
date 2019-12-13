@@ -62,14 +62,18 @@ Linking weekly sales outcome with features described above, the plots below illu
 
 <img src="images/sales_feature.jpeg" alt="sales-feature relationship" class = "ct" width = "80%">
 
-The exploration work provides a general idea of how the features and weekly sales data look like and what are their respective relations. To identify "key" features and answer the second question, our visualizations indicate the application of some advanced statistical models as next step.
+The exploration work provides a general idea of how the features and weekly sales data look like and what are their respective relations. To identify "key" features and answer the second question, our visualization results suggest the application of some advanced statistical models as the next step.
 
 ### Key factors that influence weekly sales
 
+We tried to build several statistical models, including linear model with stepwise regression, generalized estimating equations and generalized linear models. Technical parts are discussed in detail in the report and are skipped here to keep our discussion on an appropriate level. We divide selected features into two categories with converse effects on weekly sales:
 
 
 
-## Temporal comparison of e-commerce and total sales
+### Prediction comparisons
+
+
+## Temporal pattern of e-commerce
 
 
 # Summary
