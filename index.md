@@ -104,5 +104,17 @@ The seasonal fluctuation of online and offline sales also displays different pat
 
 <img src="images/ecom_quarter.jpeg" alt="sales at each quarter" class = "ct" width = "60%">
 
-# Summary
+# Recommendations
+
+* Holiday effect is statistically siginificant. Therefore, stores are suggested to host some sales promotion activities on national holidays to increase their profit.
+
+* It helps to make more promotion activities in the first quarter to attract customers.   
+
+* When facing a financial crisis, or financial decrease, more store resources are suggested to be allocated to the online department.   
+
+* The great increase of online sales in the fourth quarter suggests more resources and personnels, such as online agents during that time.
+
+* For best performance, Random Forest would be our recommended way to predict future sales, though the time usage is extremely high with large data. Gradient Boosted Decision Tree serves as an alternative with much better efficiency and acceptable prediction performance.
+
+
 
