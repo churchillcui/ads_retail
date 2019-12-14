@@ -132,7 +132,7 @@ GDP$Year <- c(rep(2010, 4), rep(2011, 4), rep(2012, 4), rep(2013,3))
 GDP$Quarter <- c(c(1,2,3,4), c(1,2,3,4), c(1,2,3,4), c(1,2,3))
 ```
 
-After finishing cleaning each separate data, we next combine them into one data frame, recording the features and sales of each department of each store at each time.
+After finishing cleaning each separate data, we next combined them into one data frame, recording the features and sales of each department of each store at each time.
 
 ```{r, warning=FALSE, message=FALSE}
 ## combine and re-organize data from multiple sources
@@ -151,7 +151,7 @@ GDP$DATE <- NULL
 data_combined <- left_join(data_combined, GDP, by = c("Year", "Quarter"))
 ```
 
-Since the temporal trend is a very important factor that may affect offline retail sales, we next include some more time indicators with different scales. Some of them (Year, Quarter) have been added in the previous tidying process. As some of them are highly correlated, we later performed forward and backward selections in the model phase, described in detail in the inference section.
+Since the temporal trend is a very important factor that may affect offline retail sales, we next included some more time indicators with different scales. Some of them (Year, Quarter) have been added in the previous tidying process. As some of them are highly correlated, we later performed forward and backward selections in the model phase, described in detail in the inference section.
 
 ```{r}
 ## include some temporal variables with different scales
@@ -161,9 +161,9 @@ data_combined$Day <- day(data_combined$Date)
 data_combined$Day_To_Begin <- as.numeric(data_combined$Date - as.Date("2010-01-01"))
 ```
 
-After combining datasets from multiple resources to one data frame, we perform some further clean work on this data frame by removing columns that could not be well interpreted due to data limitation (e.g. anonymized markdown data) or that used only for data integration purpose (e.g. "Store-Date"). The cleaned data frame is then renamed as `data_analysis` and is leveraged along the rest of our project.
+After combining datasets from multiple resources to one data frame, we performed some further clean work on this data frame by removing columns that could not be well interpreted due to data limitation (e.g. anonymized markdown data) or that used only for data integration purpose (e.g. "Store-Date"). The cleaned data frame is then renamed as `data_analysis` and is leveraged along the rest of our project.
 
-Note that we do not include online sales data in the inference and prediction of the first subproject, but instead leave them for the second subproject. The reason is that, it is not the total sales that influence retail sales, but the retail sales in Walmart is a component of total sales. As a result, the unknown population information due to location anonymization will lead to great bias. 
+Note that we did not include online sales data in the inference and prediction of the first subproject, but instead left them for the second subproject. The reason is that, it is not the total sales that influence retail sales, but the retail sales in Walmart is a component of total sales. As a result, the unknown population information due to location anonymization will lead to great bias. 
 
 ```{r}
 data_analysis <- data_combined[,c(2:10, 16:23)]
@@ -173,10 +173,10 @@ After our data tidying and wrangling process, the integrated data frame `data_an
 
 ## Exploratory data analysis
    
-In the exploratory data analysis part, we are going to explore the temporal trend of different covariates and possible interactions between these covariates using tidied data.   
+In the exploratory data analysis part, we explored the temporal trend of different covariates and possible interactions between these covariates using tidied data.   
 
 ### Heatmap of correlation between covariates
-The potential covariates that may influence the weekly sales are time information, CPI, GDP, temperature, unemployment rate, fuel price, type and size of the store. First we are going to look at the correlation heatmap of these covariates to see if there is any dependence among these covariates.   
+The potential covariates that may influence the weekly sales are time information, CPI, GDP, temperature, unemployment rate, fuel price, type and size of the store. First we looked at the correlation heatmap of these covariates to see if there is any dependence among these covariates.
 
 ```{r}
 # select potential covariates 
@@ -227,7 +227,7 @@ theme(
 From the heatmap, we observed that there is almost no dependence among these covariates, which is good for the use of our linear model and generalized linear model.      
 
 ### Weekly sales
-First we are going to look at average sales of all 45 stores. We summarise the data by calculating average weekly sales in these three years and plot the temporal trend.   
+First we looked at average sales of all 45 stores. We summarised the data by calculating average weekly sales in these three years and plot the temporal trend.   
 
 ```{r}
 # summarise average sales
@@ -245,7 +245,7 @@ ggplot(data=dat.avg.store, aes(x=Date, y=sales))+
    
 As we can see, the average sales have some small fluctuations in the first ten months of each year and have a outburst at the end of each year. This is possibly because of Thanksgiving and Christmas holidays.   
 
-Then we are going to look at averages sales in each store separately. We summarise the data by calculating the average sales across different department in each store in these three years. Then we are going to look at the relationship between average sales and different covariates, like temperature, CPI, GDP, Unemployment rate, fuel price. We stratify the store by type to visualize the relationship since type is also a potential covariate.   
+Then we looked at averages sales in each store separately. We summarised the data by calculating the average sales across different department in each store in these three years. Then we looked at the relationship between average sales and different covariates, like temperature, CPI, GDP, Unemployment rate, fuel price. We stratified the store by type to visualize the relationship since type is also a potential covariate.   
 
 ```{r}
 # summarise average sales in each store
@@ -310,7 +310,7 @@ From this plot we can note that holiday effect exists in Type A and Type B store
 ## Model fitting and inference
 
 ### Linear model and stepwise regression
-First, we will construct a linear model to capture the features in the dataset. There are many covariates, such as store ID, type and size of the store, department, time information, holiday indicator, CPI, GDP, unemployment rate, fuel price, and temperature. To capture the time information, we first break the date into the year, month information separately.   
+First, we constructed a linear model to capture the features in the dataset. There are many covariates, such as store ID, type and size of the store, department, time information, holiday indicator, CPI, GDP, unemployment rate, fuel price, and temperature. To capture the time information, we first broke the date into the year, month information separately.   
 
 ```{r}
 # Q-Q plot for response
@@ -320,7 +320,7 @@ data.fit$Weekly_Sales <- data.fit$Weekly_Sales + abs(min(data.fit$Weekly_Sales))
 data.fit$Month <- factor(data.fit$Month)
 ```
 
-First, we adjust the response to all be positive. Then we take a logarithm transformation to downsize the sales.   
+First, we adjusted the response to all be positive. Then we tool a logarithm transformation to downsize the sales.   
 
 ```{r eval = FALSE}
 # Q - Q plot for sales
@@ -329,9 +329,9 @@ qqnorm(log(data.fit$Weekly_Sales))
 
 ![](./Intermediate/qqnorm.png)
 
-From the Q-Q  (Quantile-Quantile) plot, we can see that the logarithm of adjusted weekly sales are not normally (Gaussian) distributed. Therefore, we decide to make adjustments on the dataset before we get started to use multiple statistical models.
+From the Q-Q  (Quantile-Quantile) plot, we can see that the logarithm of adjusted weekly sales are not normally (Gaussian) distributed. Therefore, we decided to make adjustments on the dataset before we get started to use multiple statistical models.
 
-We use box cox transformation to rewrite the data, making the normality more significant. 
+We used box cox transformation to rewrite the data, making the normality more significant. 
 
 The covariates in the model include store ID, department, holiday indicator, type and size of the store, year, month, fuel price, temperature, CPI, unemployment rate, GDP, and the interaction term between type and time, fuel price, temperature, CPI, unemployment rate, GDP.   
 
@@ -356,7 +356,7 @@ boxcox=read.csv("./Intermediate/boxcox.csv")
 boxcox[1:10,]
 ```
    
-From the result, we can see that the parameter in the box cox transformation should be -0.10101010. Therefore, we rewrite the response using box cox transformation and fit the linear regression model. After doing this, we use stepwise regression (both backward and forward selection) to pick the best model (minimizing AIC).  
+From the result, we can see that the parameter in the box cox transformation should be -0.10101010. Therefore, we rewrote the response using box cox transformation and fit the linear regression model. After doing this, we used stepwise regression (both backward and forward selection) to pick the best model (minimizing AIC).  
 
 ```{r eval=FALSE}
 # transform response variable
@@ -371,7 +371,7 @@ full.model <- lm(data = data.fit, Weekly_Sales ~ Store + Dept + IsHoliday + Type
 step.model <- stepAIC(full.model, direction = "both", trace = FALSE)
 ```
    
-However, when we check the model and plot the Q-Q plot for the residuals, we find an outlier in this dataset.   
+However, when we checked the model and plot the Q-Q plot for the residuals, we found an outlier in this dataset.   
 
 ```{r eval=FALSE}
 plot(step.model)
@@ -379,7 +379,7 @@ plot(step.model)
    
 ![](./Intermediate/qqnorm_with_outlier.png)
    
-Therefore we delete the outlier in the dataset, and use selected covariates to refit the linear model as below.   
+Therefore we deleted the outlier in the dataset, and used selected covariates to refit the linear model as below.   
    
 ```{r eval=FALSE}
 # use the selected model and delete the outlier
@@ -397,7 +397,7 @@ plot(final.model)
 ![](./Intermediate/qqnorm_without_outlier.png)
    
 ### Generalized Estimating Equations
-First, we calculate the summation of sales across different departments within a store on a given day. Then we treat each stores' sales data as longitudinal observations and use generalized estimating equations to fit the model. The covariates are those we selected in the linear model, and the working correlation structure is set to be `corstr = "exchangeable"` since we assume sales is correlated between different days.  
+First, we calculated the summation of sales across different departments within a store on a given day. Then we treated each stores' sales data as longitudinal observations and use generalized estimating equations to fit the model. The covariates are those we selected in the linear model, and the working correlation structure is set to be `corstr = "exchangeable"` since we assumed sales is correlated between different days.  
 
 ```{r message=FALSE, warning=FALSE, results="hide"}
 # get summarised data for gee
@@ -411,19 +411,20 @@ gee.model1 <- gee(log(sales) ~ Store + IsHoliday + Temperature + Year + Month + 
 ```
 
 ```{r}
-summary(gee.model1)$coefficients
+seq=seq(1,45,1)
+summary(gee.model1)$coefficients[-seq,1]
 ```
-   
+
 We will interpret the model result together with GLM model introduced below.
    
 ### Generalized linear model Using Quasi-Likelihood
-Our last model is generalized linear model using quasi-likelihood. First we observe that   
+Our last model is generalized linear model using quasi-likelihood. First we observed that   
 
 ```{r}
 c(mean(data_analysis$Weekly_Sales), var(data_analysis$Weekly_Sales))
 ```
    
-The variance is nearly the square of the mean. Therefore we use quasi-likelihood in which variance is $\mu^2$, and take log-link to downsize the sales data. The covariates are those selected using stepwise regression. The covariates and the link function are selected so that the model does not have a very large or very small residual deviance, making the model more convincing.   
+The variance is nearly the square of the mean. Therefore we used quasi-likelihood in which variance is $\mu^2$, and took log-link to downsize the sales data. The covariates are those selected using stepwise regression. The covariates and the link function were selected so that the model does not have a very large or very small residual deviance, making the model more convincing.   
 
 ```{r eval=FALSE}
 data.fit2 <- data_analysis
@@ -443,10 +444,11 @@ glm.model <- readRDS("./Intermediate/glm.rda")
 ```
 
 ```{r}
-summary(glm.model)
+seq=seq(1,145,1)
+summary(glm.model)$coefficients[-seq,]
 ```
    
-The definition of store types A, B, C is not mentioned from the data source, but we infer them to be Walmart Supercenter, Walmart Neighbourhood Market and Walmart Express stores respectively considering their size, amount and the description of Walmart store types before 2016.   
+The definition of store types A, B, C is not mentioned from the data source, but we inferred them to be Walmart Supercenter, Walmart Neighbourhood Market and Walmart Express stores respectively considering their size, amount and the description of Walmart store types before 2016.   
 
 Model interpretation:   
    
@@ -536,7 +538,7 @@ The second machine learning method we propose is the Gradient Boosting Decision 
 
 * This model is ensembled in the `caret` package thus there are no additional difficulties in constructing the model in R.
 
-* This model is fairly efficient that the time for running this machine learning code is acceptable given that we use parallel computing technique.
+* This model is fairly efficient that the time for running this machine learning code is acceptable given that we use the parallel computing technique.
 
 ```{r, eval = FALSE}
 ## train the model using proposed machine learning methods
@@ -555,7 +557,7 @@ pred.xgbTree <- predict(fit.xgbTree, newdata = data_test)
 
 Finally, we would compare the results of Gradient Boosting Trees with Random Forest (RF) algorithm. There are two reasons for us to choose Random Forest algorithm:
 
-* Random Forest is also based on Decision Trees as well as GBDT, and we believe that RF is more comparable with GBDT than other methods (e.g., Neural Network) not using a similar framework.
+* Similar to GBDT, Random Forest is also based on Decision Trees. We believe that RF is more comparable with GBDT than other methods (e.g., Neural Network), not using a similar framework.
 
 * The Random Forest method is also easy to implement as we could use the `rf` method embedded in the `caret` package.
 
@@ -574,9 +576,7 @@ pred.rf <- predict(fit.rf, newdata = data_test)
 
 ### Comparison of prediction models
 
-With the prediction result of each machine learning models, we first had a look at the predicted sales in comparison with real sales in the test data.
-
-We have provided some visualizations to evaluate our machine learning models.
+With the prediction result of each machine learning models, we first had a look at the predicted sales in comparison with real sales in the test data. We have provided some visualizations to evaluate our machine learning models. 
 
 First, we loaded the results of machine learning prediction to avoid wasting time on running machine learning codes.
 
@@ -631,7 +631,7 @@ ws.all <- rbind(ws.true, ws.glm, ws.CART, ws.xgbTree, ws.rf)
 ws.all$Observation_ID <- rep((seq(1,11516)), 5)
 ```
 
-We have produced two plots to compare the model-based predictions and the true value that we have in our dataset.
+We have produced two plots to compare the GLM model-based predictions and the true value that we have in our dataset.
 
 ```{r warning = FALSE}
 ## predicted sales from different models in comparison with real sales
@@ -650,7 +650,7 @@ ggplot(Comp_GLM) +
   ylim(c(0, 200000))
 ```
 
-First, we compare the reality versus a CART model prediction.
+And we compare the reality versus a CART model prediction.
 
 ```{r warning = FALSE}
 ## predicted sales from different models in comparison with real sales
@@ -669,9 +669,9 @@ ggplot(Comp_CART) +
   ylim(c(0, 200000))
 ```
 
-Since the structure of CART is simple, we only had ~15 different levels of values for different values of predictors. For a prediction with better quality, we should consider more elaborate model based on this CART model.
+Since the structure of CART is simple, we only had ~15 different levels of predicting values for different values of predictors. We should consider more elaborate model based on this CART model to find prediction models with an acceptable performance.
 
-Second, we compared the reality with GBDT prediction.
+After that, we compared the reality with GBDT prediction.
 
 ```{r warning = FALSE}
 ## predicted sales from different models in comparison with real sales
@@ -690,7 +690,7 @@ ggplot(Comp_xgbTree) +
   ylim(c(0, 200000))
 ```
 
-We could see the diagonality on the point plot given above, which means that the GBDT algorithm grabs more information from the predictors in giving a prediction. However, we could see some outliers when the real sales value is ~25000 but the prediction value is ~130000, which is not good.
+We could see the diagonality on the point plot given above, which means that the GBDT algorithm grabs more information from the predictors in giving a prediction than CART.
 
 Finally, we compared the reality with Random Forest prediction.
 
@@ -711,7 +711,7 @@ ggplot(Comp_rf) +
   ylim(c(0, 200000))
 ```
 
-We could also see the diagonality on the point plot given above, which means that the RF algorithm also grabs more information from the predictors in giving a prediction. The outliers in the Reality vs GBDT plot disappeared in the Reality vs RF plot, which indicates that RF algorithm may have a better performance than GBDT.
+We could see from the plot that the performance of RF is slightly better than that of GBDT.
 
 We used the square root of mean squared deviance as a score to evaluate the fitting performance.
 
