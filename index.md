@@ -92,7 +92,7 @@ E-commerce has become more and more popular all over the world. The sales chain 
 
 The chart below describe the temporal trend of both online and offline sales in the United States from 2000 to 2018, as well as the GDP during this time. During the notable financial crisis period around 2008, we observe a drop of both GDP and offline sales, but the online sales remained steady. Such different patterns were modeled and confirmed through spline coefficients, suggesting higher robustness of e-commerce during financial crisis, which might come from its more flexible operating mode.
 
-<img src="images/pred_time.jpeg" alt="prediction algorithms running time" class = "ct" width = "90%">
+<img src="images/ecom_time.jpeg" alt="US retail sales over time" class = "ct" width = "90%">
 
 ### Seasonal fluctuation
 
