@@ -5,19 +5,19 @@ Erjia Cui
 
 Zebin Wang
 
-Jingning Zhang
-
 Jiyang Wen
 
+Jingning Zhang
+
 ### Topic
-Walmart retail sales inference and prediction
+Comprehensive advice for retail sales managers
 
 ### Data sources
-[Walmart weekly sales data from 2010 to 2012 together with temporal and nontemporal store features](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting)
+* [Walmart retail sales and store features data from Feb 5, 2010 to Oct 26, 2012](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data)
 
-[United States GDP data from 1947 to 2019](https://fred.stlouisfed.org/series/GDP)
+* [US total retail sales and e-commerce retail sales from 4th quarter 1999 to 3rd quarter 2019](https://www.census.gov/retail/index.html)
 
-United States e-commerce and total sales data from 2009 to 2019 (link)
+* [US Gross Domestic Product (GDP) data](https://fred.stlouisfed.org/series/GDP)
 
 ### Project files location
 The report (both .rmd and .html files) and data are available in the "master" branch of this repository.
