@@ -74,7 +74,7 @@ We built several statistical models, including linear model with stepwise regres
 
 **Negative effects**: Unemployment rate, fuel price.
 
-The effect of some key factors on weekly sales correspond well with our intuition. For example, unemployment rate tends to negatively influence weekly sales, as low umployment rate usually indicates strong economy. It is also interesting to find some features, with only vague ideas on how to influence retail sales, are selected as key factors, such as fuel price. Apart from multiple factors that can be related to retail sales, we indeed find an increase patterns of retail sales over time. 
+The effect of some key factors on weekly sales correspond well with our intuition. For example, unemployment rate tends to negatively influence weekly sales, as low umployment rate usually indicates strong economy. We further explored the type-specific effect and found a faster sales increase in type B stores than type A stores when unemployment rate drops. It is also interesting to find some features, with only vague ideas on how to influence retail sales, are selected as key factors, such as fuel price. Apart from multiple factors that can be related to retail sales, we indeed find an increase patterns of retail sales over time. 
 
 ### Prediction
 
