@@ -74,25 +74,29 @@ We built several statistical models, including linear model with stepwise regres
 
 **Negative effects**: Unemployment rate, fuel price.
 
-The effect of some key factors on weekly sales correspond well with our intuition. For example, unemployment rate tends to negatively influence weekly sales, as low umployment rate usually indicates strong economy. It is also interesting to find some features, with vague idea on how to influence retail sales, are selected as key factors, such as fuel price. One worrying fact for sales managers is, we indeed find a decrease of retail sales over time, suggesting the further look at possible threats (e.g. e-commerce).
+The effect of some key factors on weekly sales correspond well with our intuition. For example, unemployment rate tends to negatively influence weekly sales, as low umployment rate usually indicates strong economy. It is also interesting to find some features, with only vague ideas on how to influence retail sales, are selected as key factors, such as fuel price. Apart from multiple factors that can be related to retail sales, we indeed find an increase patterns of retail sales over time. 
 
 ### Prediction
 
-The sales in some period are assumed to have clear patterns, such as two peaks on Thanksgiving and Christmas. However, it has been hard for large retailers to make precise prediction on the sales in a near future around the year, with so many factors (temporal, spatial, other) to consider at the same time. We sought to change that by constructing some advanced tree-based predictive models, and compare them with traditional baseline methods to assess the performance. The first plot below shows ...... (wait for the plot)
+The sales in certain periods display quite clear patterns, such as two peaks on Thanksgiving and Christmas, but look irregular at most time of a year. It has long been a challenging task for retailers to make precise prediction on future sales using existed information with so many factors (fixed, temporal, spatial, joint) to consider at the same time. We sought to improve the prediction performance using some advanced tree-based techniques, and compare prediction scores with traditional baseline methods. The first plot below shows ...... (wait for the plot)
+
+The computing time of three tree-based prediction models are compared under different sample sizes. It is interesting to observe an exponential pattern for the speed of random forest, which making it faster under small sample size, but dramatically slower as sample size increases. Meanwhile, the running speed of CART and GBDT (xgbTree) looks pretty stable over sample size. 
+
+<img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "90%">
 
 ## US retail sales pattern
 
-E-commerce has been considered as both challenge and opportunity for many traditional retailers. The sales chain is often shorter by skipping the onsite stores step, and the promotion stategy can be slightly different, usually focusing on shipping discount for online sales. For sales managers and many other people who are not familiar with e-commerce, it is good to first have a look at its new features and differences before diving into this booming area.
+E-commerce has become more and more popular all over the world. The sales chain is often shorter by skipping the onsite stores step, and the promotion stategy can be slightly different under such new sales pattern by focusing on shipping discount of online purchase. For retail sales managers and many other people who are interested in e-commerce, it is good to first have a look at its new features under the framework of general US retail sales.
 
 ### Financial crisis influence
 
-The chart below describe the temporal trend of both e-commerce sales and non-ecommerce sales in the United States from 2000 to 2018, as well as the GDP during this time period. During the notable financial crisis in year 2008, it seems both GDP and non-ecommerce sales drops off in the following short period, but the e-commerce sales remained steady. Such different patterns were modeled and confirmed through spline coefficients, suggesting higher robustness of e-commerce during financial crisis, which might come from its more flexible operating mode.
+The chart below describe the temporal trend of both online and offline sales in the United States from 2000 to 2018, as well as the GDP during this time. During the notable financial crisis period around 2008, we observe a drop of both GDP and offline sales, but the online sales remained steady. Such different patterns were modeled and confirmed through spline coefficients, suggesting higher robustness of e-commerce during financial crisis, which might come from its more flexible operating mode.
 
-<img src="images/ecom_time.jpeg" alt="average sales over time" class = "ct" width = "90%">
+<img src="images/pred_time.jpeg" alt="prediction algorithms running time" class = "ct" width = "90%">
 
 ### Seasonal fluctuation
 
-The seasonal fluctuation of e-commerce and offline sales also exhibits different patterns from the above charts, with especially lower offline sales in the 1st quarter and higher online sales in the 4th quarter. We extract and describe such pattern of e-commerce and non-ecommerce sales by summarizing their respective percentage of sales in each quarter for each year. The large proportion of e-commerce sales in the last quarter of a year may be attributed to large sales promotion events during this time, together with possible cold weather effects. For those retailers that are new to e-commerce industry, such different distribution of a year suggests the modification of current storage plan over time.
+The seasonal fluctuation of online and offline sales also displays different patterns from the above charts, with apparent low offline sales in the 1st quarter and high online sales in the 4th quarter. We extract and describe such seasonal pattern by summarizing their respective percentage of sales by quarter for each year. The large proportion of e-commerce sales in the last quarter of a year may be attributed to large sales promotion events during this time, together with cold weather and other possible factors. For the retailers that are recently transforming to e-commerce business, such yearly pattern suggests the modification of storage plan over time.
 
 <img src="images/ecom_quarter.jpeg" alt="sales at each quarter" class = "ct" width = "60%">
 
