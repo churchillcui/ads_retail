@@ -78,11 +78,11 @@ The effect of some key factors on weekly sales correspond well with our intuitio
 
 ### Prediction
 
-The sales in certain periods display quite clear patterns, such as two peaks on Thanksgiving and Christmas, but look irregular at most time of a year. It has long been a challenging task for retailers to make precise prediction on future sales using existed information with so many factors (fixed, temporal, spatial, joint) to consider at the same time. We sought to improve the prediction performance using some advanced tree-based techniques, and compare prediction scores with traditional baseline methods. The first plot below shows ...... (wait for the plot)
+The sales in certain periods display quite clear patterns, such as two peaks on Thanksgiving and Christmas, but look irregular at most time of a year. It has long been a challenging task for retailers to make precise prediction on future sales using existed information with so many factors (fixed, temporal, spatial, joint) to consider at the same time. We sought to improve the prediction performance using some advanced tree-based techniques, and compare prediction performance with traditional baseline methods. The first plot below shows ...... (wait for the plot)
 
 The computing time of three tree-based prediction models are compared under different sample sizes. It is interesting to observe an exponential pattern for the speed of random forest, which making it faster under small sample size, but dramatically slower as sample size increases. Meanwhile, the running speed of CART and GBDT (xgbTree) looks pretty stable over sample size. 
 
-<img src="images/sales_temporal.jpeg" alt="average sales over time" class = "ct" width = "90%">
+<img src="images/pred_time.jpeg" alt= "computing time over different sample size" class = "ct" width = "90%">
 
 ## US retail sales pattern
 
