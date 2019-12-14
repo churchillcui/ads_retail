@@ -70,7 +70,7 @@ The exploration work provides a general idea of how the features and weekly sale
 
 We built several statistical models, including linear model with stepwise regression, generalized estimating equations, and generalized linear models. Technical parts are skipped here to keep our discussion on an appropriate level, and are discussed in detail in the report. We divide selected features into two categories with converse effects on retail sales:
 
-**Positive effects**: Is Holiday indicator, CPI, Time.
+**Positive effects**: Is Holiday indicator, CPI, Time, Temperature.
 
 **Negative effects**: Unemployment rate, fuel price.
 
