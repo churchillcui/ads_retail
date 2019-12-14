@@ -98,7 +98,7 @@ The chart below describe the temporal trend of both online and offline sales in 
 
 <img src="images/ecom_time.jpeg" alt="US retail sales over time" class = "ct" width = "90%">
 
-### Seasonal fluctuation
+### Seasonal patterns
 
 The seasonal fluctuation of online and offline sales also displays different patterns from the above charts, with apparent low offline sales in the 1st quarter and high online sales in the 4th quarter. We extract and describe such seasonal pattern by summarizing their respective percentage of sales by quarter for each year. The large proportion of e-commerce sales in the last quarter of a year may be attributed to large sales promotion events during this time. For the retailers that are recently transforming to e-commerce business, such yearly pattern suggests the modification of storage plan over time.
 
