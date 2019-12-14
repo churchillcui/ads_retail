@@ -444,7 +444,7 @@ glm.model <- readRDS("./Intermediate/glm.rda")
 ```
 
 ```{r}
-seq=seq(1,145,1)
+seq=seq(1,125,1)
 summary(glm.model)$coefficients[-seq,]
 ```
    
