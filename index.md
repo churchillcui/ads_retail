@@ -78,11 +78,15 @@ The effect of some key factors on weekly sales correspond well with our intuitio
 
 ### Prediction
 
-The sales in certain periods display quite clear patterns, such as two peaks on Thanksgiving and Christmas, but look irregular at most time of a year. It has long been a challenging task for retailers to make precise prediction on future sales using existed information with so many factors (fixed, temporal, spatial, joint) to consider at the same time. We sought to improve the prediction performance using some advanced tree-based techniques, and compare prediction performance with traditional baseline methods. The first plot below shows ...... (wait for the plot)
+The sales in certain periods display quite clear patterns, such as two peaks on Thanksgiving and Christmas, but look irregular at most time of a year. It has long been a challenging task for retailers to make precise prediction on future sales using existed information with so many factors (both temporal and spatial) to consider at the same time. We sought to improve the prediction performance using some advanced tree-based techniques, and compare prediction performance with traditional baseline methods (GLM). The charts below illustrate the tremendous increase of prediction performance using our model. 
 
-The computing time of three tree-based prediction models are compared under different sample sizes. It is interesting to observe an exponential pattern for the speed of random forest, which making it faster under small sample size, but dramatically slower as sample size increases. Meanwhile, the running speed of CART and GBDT (xgbTree) looks pretty stable over sample size. 
+<img src="images/pred_accu.jpeg" alt= "prediction accuracy of different models" class = "ct" width = "90%">
+
+The computing time of three tree-based prediction models are compared under different sample sizes. It is interesting to observe an exponential running time of random forest, which makes it dramatically slower with large sample size. Meanwhile, the running speed of the other two models (CART and GBDT) looks pretty stable across different sample sizes. 
 
 <img src="images/pred_time.jpeg" alt= "computing time over different sample size" class = "ct" width = "90%">
+
+In summary, we found the Random Forest perform best in accuracy, but its usage time increase exponentially. The Gradient Boosted Decision Tree method would be a reasonable substitute for the efficient problem of RF.
 
 ## US retail sales pattern
 
