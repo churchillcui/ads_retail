@@ -14,7 +14,7 @@ As the world's largest economy by nominal GDP and net wealth, the United States 
 
 <img src="images/sales_cartoon.png" alt="sales manager cartoon" class = "ct" width = "80%">
 
-These hard problems arose from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and retail sales data for a long time. To cover the gap, we conducted this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
+These hard problems from retail sales managers call for a more systematic and scientific approach to model different sales types with potential influential factors. Unfortunately, there has been a gap between the need of sales managers and retail sales data for a long time. To cover the gap, we conducted this data science project using retail sales data, trying to provide comprehensive advice for retail sales managers.
 
 ## Objective
 
